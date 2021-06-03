@@ -1,0 +1,38 @@
+.experience {
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+  padding-bottom: 30px;
+
+  .item {
+    border-radius: 5px;
+    background: linear-gradient(#9c989e, #d4d3d4);
+    color: #000;
+    padding: 5px;
+    margin: 5px;
+    h2 {
+      text-align: left;
+      font-size: 22px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    &_position {
+      padding-top: 10px;
+      font-size: 18px;
+    }
+    &_description {
+      font-size: 16px;
+      line-height: 150%;
+    }
+    .deta {
+      width: 150px;
+      min-height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      margin: 5px 0;
+    }
+  }
+}

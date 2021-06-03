@@ -1,0 +1,57 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="text">Company</label>
+    <input
+      type="text"
+      name="company"
+      id="company"
+      [(ngModel)]="company"
+      placeholder="Company"
+    />
+  </div>
+  <div class="form-control">
+    <label for="position">Position</label>
+    <input
+      type="text"
+      name="position"
+      id="position"
+      [(ngModel)]="position"
+      placeholder="Position"
+    />
+  </div>
+  <div class="form-control">
+    <label for="city">City</label>
+    <input
+      type="text"
+      name="city"
+      id="city"
+      [(ngModel)]="city"
+      placeholder="city"
+    />
+  </div>
+  <div class="form-control">
+    <label for="from">From</label>
+    <input
+      type="number"
+      name="from"
+      id="from"
+      [(ngModel)]="from"
+      placeholder="from"
+    />
+  </div>
+  <div class="form-control">
+    <label for="to">To</label>
+    <input type="number" name="to" id="to" [(ngModel)]="to" placeholder="To" />
+  </div>
+  <div class="form-control">
+    <label for="to">Description</label>
+    <textarea
+      name="description"
+      id="description"
+      [(ngModel)]="description"
+      cols="60"
+      rows="6"
+    ></textarea>
+  </div>
+  <input type="submit" value="Save Experience" class="btn" />
+</form>

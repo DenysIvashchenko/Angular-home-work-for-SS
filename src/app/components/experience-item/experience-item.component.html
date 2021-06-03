@@ -1,0 +1,11 @@
+<div class="experience">
+  <div class="item" *ngFor="let item of experience">
+    <h2>{{ item.company }}</h2>
+    <p class="item_position">{{ item.position }}</p>
+    <p class="item_description">{{ item.description }}</p>
+    <div class="deta">
+      <span>from: {{ item.from }}</span>
+      <span>to: {{ item.to }}</span>
+    </div>
+  </div>
+</div>
