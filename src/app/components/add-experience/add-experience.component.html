@@ -20,6 +20,16 @@
     />
   </div>
   <div class="form-control">
+    <label for="city">City</label>
+    <input
+      type="text"
+      name="city"
+      id="city"
+      [(ngModel)]="city"
+      placeholder="city"
+    />
+  </div>
+  <div class="form-control">
     <label for="from">From</label>
     <input
       type="number"
@@ -43,5 +53,5 @@
       rows="6"
     ></textarea>
   </div>
-  <input type="submit" value="Save Experience" class="btn btn-block" />
+  <input type="submit" value="Save Experience" class="btn" />
 </form>

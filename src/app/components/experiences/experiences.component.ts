@@ -18,6 +18,12 @@ export class ExperiencesComponent implements OnInit {
       .subscribe((experience) => (this.experience = experience));
   }
 
+  AddExperience(experience: Exp): void {
+    this.experianceService
+      .addExperience(experience)
+      .subscribe((experience) => this.experience.push(experience));
+  }
+
   ngOnInit(): void {
     this.getExperiance();
   }
