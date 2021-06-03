@@ -25,5 +25,14 @@
       font-size: 16px;
       line-height: 150%;
     }
+    .deta {
+      width: 150px;
+      min-height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      margin: 5px 0;
+    }
   }
 }

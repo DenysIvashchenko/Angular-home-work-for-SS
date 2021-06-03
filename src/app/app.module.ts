@@ -13,11 +13,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { AboutComponent } from './pages/about/about.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 
 import { ExperianceComponent } from './pages/experiance/experiance.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { ExperienceItemComponent } from './components/experience-item/experience-item.component';
+import { AddExperienceComponent } from './components/add-experience/add-experience.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,7 @@ import { ExperienceItemComponent } from './components/experience-item/experience
     ContactComponent,
     ExperiencesComponent,
     ExperienceItemComponent,
+    AddExperienceComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +45,8 @@ import { ExperienceItemComponent } from './components/experience-item/experience
     MatIconModule,
     MatListModule,
     HttpClientModule,
+    MatFormFieldModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

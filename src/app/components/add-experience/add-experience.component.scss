@@ -1,0 +1,31 @@
+form {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+.form-control {
+  margin: 20px 0;
+
+  label {
+    display: block;
+  }
+
+  input {
+    width: 95%;
+    height: 30px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+  }
+  textarea {
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+  }
+}
