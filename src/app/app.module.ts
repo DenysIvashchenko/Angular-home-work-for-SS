@@ -16,9 +16,10 @@ import { AboutComponent } from './pages/about/about.component';
 import { ExperianceComponent } from './pages/experiance/experiance.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
+import { ExperienceItemComponent } from './components/experience-item/experience-item.component';
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, AboutComponent, ExperianceComponent, ContactComponent, ExperiencesComponent],
+  declarations: [AppComponent, NavigationComponent, AboutComponent, ExperianceComponent, ContactComponent, ExperiencesComponent, ExperienceItemComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
