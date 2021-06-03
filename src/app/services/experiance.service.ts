@@ -1,15 +1,17 @@
-import { EXP } from './../mock-exp';
 import { Exp } from './../models/exp';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ExperianceService {
-  constructor() {}
+  private apiUrl = 'http://localhost:5000/experience';
+
+  constructor(private http: HttpClient) {}
 
   getExperience(): Observable<Exp[]> {
-    return of(EXP);
+    return this.http.get<Exp[]>(this.apiUrl);
   }
 }
