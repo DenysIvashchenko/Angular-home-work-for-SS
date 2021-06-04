@@ -22,6 +22,7 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
 import { ExperienceItemComponent } from './components/experience-item/experience-item.component';
 import { AddExperienceComponent } from './components/add-experience/add-experience.component';
 import { ButtonComponent } from './components/button/button.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { ButtonComponent } from './components/button/button.component';
     HttpClientModule,
     MatFormFieldModule,
     FormsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
