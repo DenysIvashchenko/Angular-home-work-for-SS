@@ -7,4 +7,7 @@
   (onAddExperience)="AddExperience($event)"
   *ngIf="showAdd"
 ></app-add-experience>
-<app-experience-item [experience]="experience"></app-experience-item>
+<app-experience-item
+  [experience]="experience"
+  (deleteExperience)="deleteExperience($event)"
+></app-experience-item>
