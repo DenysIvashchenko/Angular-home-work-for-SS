@@ -1,6 +1,8 @@
+import { UiService } from './../../services/ui.service';
 import { ExperianceService } from './../../services/experiance.service';
 import { Exp } from './../../models/exp';
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-experiences',
@@ -9,8 +11,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperiencesComponent implements OnInit {
   experience!: Exp[];
+  showAdd: boolean = false;
+  subscription!: Subscription;
 
-  constructor(private experianceService: ExperianceService) {}
+  constructor(
+    private experianceService: ExperianceService,
+    private uiService: UiService
+  ) {
+    this.subscription = this.uiService
+      .onToggle()
+      .subscribe((value) => (this.showAdd = value));
+  }
 
   getExperiance(): void {
     this.experianceService
@@ -22,6 +33,10 @@ export class ExperiencesComponent implements OnInit {
     this.experianceService
       .addExperience(experience)
       .subscribe((experience) => this.experience.push(experience));
+  }
+
+  toggleAddExperience(): void {
+    this.uiService.toggleAdd();
   }
 
   ngOnInit(): void {

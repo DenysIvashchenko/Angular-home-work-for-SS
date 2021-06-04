@@ -11,6 +11,7 @@ export class UiService {
   constructor() {}
 
   toggleAdd(): void {
+    console.log('toggledAdd from ui service', this.showAdd);
     this.showAdd = !this.showAdd;
     this.subject.next(this.showAdd);
   }

@@ -21,6 +21,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { ExperienceItemComponent } from './components/experience-item/experience-item.component';
 import { AddExperienceComponent } from './components/add-experience/add-experience.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AddExperienceComponent } from './components/add-experience/add-experien
     ExperiencesComponent,
     ExperienceItemComponent,
     AddExperienceComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,

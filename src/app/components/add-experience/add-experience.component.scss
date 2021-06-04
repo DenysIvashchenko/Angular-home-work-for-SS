@@ -1,9 +1,9 @@
 form {
-  border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
   max-width: 700px;
   margin: 10px auto;
+  background: rgba(100, 97, 97, 0.5);
 
   .btn {
     background: #7b1fa2;
@@ -11,6 +11,8 @@ form {
     padding: 5px;
     border-radius: 5px;
     display: block;
+    border: none;
+    font-size: 16px;
   }
 }
 
@@ -18,7 +20,7 @@ form {
   margin-bottom: 40px;
 }
 .form-control {
-  margin: 20px 0;
+  margin: 10px 0;
 
   label {
     display: block;
