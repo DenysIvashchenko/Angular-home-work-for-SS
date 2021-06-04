@@ -1,4 +1,13 @@
+<app-button
+  (btnClick)="toggleAddExperience()"
+  color="{{ showAdd ? 'red' : '#7b1fa2' }}"
+  text="{{ showAdd ? 'Close' : 'Add' }}"
+></app-button>
 <app-add-experience
   (onAddExperience)="AddExperience($event)"
+  *ngIf="showAdd"
 ></app-add-experience>
-<app-experience-item [experience]="experience"></app-experience-item>
+<app-experience-item
+  [experience]="experience"
+  (deleteExperience)="deleteExperience($event)"
+></app-experience-item>

@@ -16,8 +16,14 @@ export class AddExperienceComponent {
   description!: string;
 
   onSubmit(): void {
-    if (!this.company) {
-      alert('add company');
+    if (
+      !this.company &&
+      !this.city &&
+      !this.position &&
+      !this.description &&
+      !this.from
+    ) {
+      alert('fill up the form');
       return;
     }
 
